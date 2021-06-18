@@ -18,13 +18,11 @@ for n in numbers:
 # Step 3
 # Multiply all the elements in the list by 5
 
-final_list = []
+x = len(numbers)
 
-for n in numbers:
-    a = n * 5
-    final_list.append(a)
-    
-numbers = final_list
+for i in range(x):
+    numbers[i] = numbers[i] * 5
+
 print(numbers)
 
 
