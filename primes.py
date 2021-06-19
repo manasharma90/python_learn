@@ -4,12 +4,22 @@
 
 def is_prime(n):
     # Write your code here and return False/True
-    return False
 
+    if n == 2:
+        return True
+
+    for i in range(2,n):
+        if n % i == 0:
+            return False
+    return True
 
 # Code here to build the list of primes from the first 1000 numbers
 primes = []
 
 for i in range(1000):
-    # Remove the pass and fill this out
-    pass
+    if is_prime(i) == True:
+        primes.append(i)
+
+print(primes)
+
+    
