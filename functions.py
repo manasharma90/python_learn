@@ -16,8 +16,19 @@ def is_Palindrome(s):
     else:
         return False
 
-print(is_Palindrome('malvika'))
-print(is_Palindrome('nitin'))
+def is_palindrome_new(s):
+    for i in range(len(s)):
+        if s[i] != s[len(s)-(i+1)]:
+            return False
+    return True
+
+def is_palindrome_reverse(s):
+    return (s == s[::-1])
+
+print(is_palindrome_reverse('malvika'))
+print(is_palindrome_reverse('nitin'))
+print(is_palindrome_reverse('madam'))
+print(is_palindrome_reverse('ntin'))
 
 
 
