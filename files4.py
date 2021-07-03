@@ -17,7 +17,7 @@ for k,v in contents_dict.items():                   # loops from the key,value i
     word_counts.append((k,v))                       # appends the (key,value) tuple into the list. Now we have a list of tuples with each tuple having a word and its count
  
 def sort_tuple(tup):                                # defining a function to sort the tuples by their second element
-    tup.sort(key = lambda x: x[1], reverse = True)  # x[1] means the second element in the tuple. reverse is optional- if not written, the list is sorted in ascending order
+    tup.sort(key = lambda x: x[1], reverse = True)  # x[1] means the second element in the tuple. reverse is optional- if not written or False, the list is sorted in ascending order. If true, list is sorted in descending order
     return tup
 
 ordered_list = sort_tuple(word_counts)
